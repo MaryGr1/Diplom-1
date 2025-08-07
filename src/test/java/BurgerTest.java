@@ -5,9 +5,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-import praktikum.Bun;
-import praktikum.Burger;
-import praktikum.Ingredient;
+import praktikum.*;
 
 import static org.junit.Assert.*;
 import static praktikum.IngredientType.FILLING;
@@ -16,7 +14,7 @@ import static praktikum.IngredientType.SAUCE;
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
 
-    Burger burger = new Burger ();
+    Burger burger = new Burger();
 
     @Mock
     Ingredient ingredient;
@@ -59,7 +57,7 @@ public class BurgerTest {
        assertEquals(1, burger.ingredients.size());
     }
 
-    // проверяем, что ингредиенты меняются местами
+    // проверяем, что ингредиент меняет индекс
 
     @Test
 
